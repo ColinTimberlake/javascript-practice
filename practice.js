@@ -23,3 +23,30 @@ function myTestFunction() {
 const helloNewFriend= (name) => {
     console.log(`You told me your name was ${name}, right?`)
 }
+class Animal {
+    constructor(name, type) {
+        this._name=name;
+        this._type=type;
+    }
+    get name() {
+        return this._name;
+    }
+    get type() {
+        return this._type;
+    }
+}
+class Dog extends Animal {
+    constructor(name, type) {
+        super(this._name, 'Dog')
+    }
+}
+class Bird extends Animal {
+    constructor(name, type) {
+        super(this._name, 'Bird')
+    }
+}
+class Cat extends Animal {
+    constructor(name, type) {
+        super(this._name, 'Cat')
+    }
+}
